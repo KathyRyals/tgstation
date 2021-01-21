@@ -1036,9 +1036,10 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 /obj/machinery/power/supermatter_crystal/contents_explosion(severity, target)
 	return
 
+
+
 /obj/machinery/power/supermatter_crystal/engine
 	is_main_engine = TRUE
-
 /obj/machinery/power/supermatter_crystal/shard
 	name = "supermatter shard"
 	desc = "A strangely translucent and iridescent crystal that looks like it used to be part of a larger structure."
@@ -1056,6 +1057,11 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	is_main_engine = TRUE
 	anchored = TRUE
 	moveable = FALSE
+
+
+/obj/machinery/power/supermatter_crystal/shard/olympics
+	gasefficency = 0.15
+	explosion_power = 35
 
 // When you wanna make a supermatter shard for the dramatic effect, but
 // don't want it exploding suddenly
